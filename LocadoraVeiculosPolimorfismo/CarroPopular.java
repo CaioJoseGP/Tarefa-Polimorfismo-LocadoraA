@@ -9,6 +9,7 @@ public class CarroPopular extends Carro {
     @Override
     public void calcMultaTotal(int numRenovacao) {
         if(numRenovacao > 1) {
+            numRenovacao = numRenovacao - 1;
             super.calcMultaTotal(numRenovacao);
         }
     }
