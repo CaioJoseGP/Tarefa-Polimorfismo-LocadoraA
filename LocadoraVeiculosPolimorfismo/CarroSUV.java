@@ -13,6 +13,7 @@ public class CarroSUV extends Carro {
     @Override
     public void calcMultaTotal(int numRenovacao) {
         if(numRenovacao > 3) {
+            numRenovacao = numRenovacao - 3;
             super.calcMultaTotal(numRenovacao);
         }
     }
